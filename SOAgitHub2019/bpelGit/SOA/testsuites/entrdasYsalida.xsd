@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.imagana.org"
+            targetNamespace="http://www.imagana.org" elementFormDefault="qualified">
+  <xsd:complexType name="valEntrada">
+    <xsd:sequence>
+      <xsd:element name="entradaUno" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="valSalida">
+    <xsd:sequence>
+      <xsd:element name="salidaUno" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="entrada" type="valEntrada"/>
+  <xsd:element name="salida" type="valSalida"/>
+</xsd:schema>
